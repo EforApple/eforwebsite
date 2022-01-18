@@ -1,12 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
+.container{
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 0.5fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr;
+    grid-template-areas: 
+    "main main"
+    "Bio Bio"
+    "Instagram Twitter"
+    "Discord YouTube"
+    "Snapchat Spotify"
+    "Twitch Reddit"
+    "GitHub Pinterest"
+    "OnlyFans Linkdin"
+    "PayPal Facebook";
+    grid-gap: 0.2rem;
+
 }
-.header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url("Stuff in website\banner.png");
-    background-position: center;
-    background-size: cover;
-    position: relative;
+main{
+    background-color: purple;
+    grid-area: main;
+}
+.Bio{
+    background-color: gray;
+    grid-area: Bio;
+}
+.Instagram{
+    grid-area: Instagram;
+    color:white;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.Twitter{
+    grid-area: Twitter;
+    background-color: #55adee;
+}
+.Discord{
+    grid-area: Discord;
+    background-color: #5764f1;
+}
+.YouTube{
+    grid-area: YouTube;
+    background-color: red;
+}
+.Snapchat{
+    grid-area: Snapchat;
+    background-color: #f5f236;
+}
+.Spotify{
+    grid-area: Spotify;
+    background-color: #1ccc5b;
+}
+.Twitch{
+    grid-area: Twitch;
+    background-color: #8a43f2;
+}
+.Reddit{
+    grid-area: Reddit;
+    background-color: #ff4300;
+}
+.GitHub{
+    grid-area: GitHub;
+    color:white;
+    background-color: #000000;
+}
+.Pinterest{
+    grid-area: Pinterest;
+    background-color: #e61b27;
+}
+.OnlyFans{
+    grid-area: OnlyFans;
+    background-color: #00a0f0;
+}
+.Linkdin{
+    grid-area: Linkdin;
+    background-color: #0077b7;
+}
+.PayPal{
+    grid-area: PayPal;
+    background-image: linear-gradient(to right, #0d3883, #009cda);
+}
+.Facebook{
+    grid-area: Facebook;
+    background-color: #1877f2;
+}
+
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        height: 300vh;
+        grid-template-rows: 3fr 1.5fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr;
+        grid-template-areas: 
+    "main"
+    "Bio"
+    "Instagram"
+    "Twitter"
+    "Discord"
+    "YouTube"
+    "Snapchat"
+    "Spotify"
+    "Twitch"
+    "Reddit"
+    "GitHub"
+    "Pinterest"
+    "OnlyFans"
+    "Linkdin"
+    "PayPal"
+    "Facebook";
+    }
 }
