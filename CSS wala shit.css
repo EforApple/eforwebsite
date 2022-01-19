@@ -1,15 +1,17 @@
 html {
     background-color: #222222;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 *{
-    padding: 2px;
-    border-radius: 10px;
+    text-align: center;
+    font-size:25px;
 }
 .container{
     display: grid;
-    height: 200vh;
+    height: 300vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 0.5fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr;
+    grid-template-rows: 0.1fr 0.5fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr;
     grid-template-areas: 
     "main main"
     "Bio Bio"
@@ -18,20 +20,57 @@ html {
     "Snapchat Spotify"
     "Twitch Reddit"
     "GitHub Pinterest"
-    "OnlyFans Linkdin"
+    "OnlyFans Linkedin"
     "PayPal Facebook";
-    grid-gap: 1rem;
+    grid-row-gap: 3.5rem;
 
 }
+.PFP{
+    max-width: 100%;
+  height: auto;
+}
 main{
-    background-color: purple;
     grid-area: main;
 }
+.wrapper {
+    color:white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 9ch;
+    animation: typing 1s steps(9), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 .Bio{
-    background-color: gray;
+    color:white;
     grid-area: Bio;
 }
 .Instagram{
+    border-radius: 25px;
+    padding: 10px;
+    justify-items: end;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Instagram;
     color:white;
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
@@ -48,55 +87,107 @@ main{
 }
 
 .Twitter{
+    border-radius: 25px;
+    color:white;
+    justify-items: start;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Twitter;
     background-color: #55adee;
 }
 .Discord{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Discord;
     background-color: #5764f1;
 }
 .YouTube{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: YouTube;
     background-color: red;
 }
 .Snapchat{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Snapchat;
     background-color: #f5f236;
 }
 .Spotify{
+    border-radius: 25px;
+    color:black;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Spotify;
     background-color: #1ccc5b;
 }
 .Twitch{
+    border-radius: 25px;
+    color:black;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Twitch;
     background-color: #8a43f2;
 }
 .Reddit{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Reddit;
     background-color: #ff4300;
 }
 .GitHub{
+    border-radius: 25px;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: GitHub;
     color:white;
     background-color: #000000;
 }
 .Pinterest{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Pinterest;
     background-color: #e61b27;
 }
 .OnlyFans{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: OnlyFans;
     background-color: #00a0f0;
 }
-.Linkdin{
-    grid-area: Linkdin;
+.Linkedin{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
+    grid-area: Linkedin;
     background-color: #0077b7;
 }
 .PayPal{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: PayPal;
     background-image: linear-gradient(to right, #0d3883, #009cda);
 }
 .Facebook{
+    border-radius: 25px;
+    color:white;
+    margin-left: 15%;
+    margin-right: 5%;
     grid-area: Facebook;
     background-color: #1877f2;
 }
@@ -106,8 +197,8 @@ main{
     .container{
         grid-template-columns: 1fr;
         height: 300vh;
-        grid-template-rows: 3fr 1.5fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr;
-        grid-template-areas: 
+        grid-template-rows:0.3fr 1.5fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr;
+        grid-template-areas:
     "main"
     "Bio"
     "Instagram"
@@ -121,7 +212,7 @@ main{
     "GitHub"
     "Pinterest"
     "OnlyFans"
-    "Linkdin"
+    "Linkedin"
     "PayPal"
     "Facebook";
     }
