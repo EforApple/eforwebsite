@@ -66,6 +66,7 @@ main{
     grid-area: Bio;
 }
 .Instagram{
+    text-decoration: none;
     border-radius: 25px;
     padding: 10px;
     justify-items: end;
@@ -87,6 +88,8 @@ main{
 }
 
 .Twitter{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     justify-items: start;
@@ -96,6 +99,8 @@ main{
     background-color: #55adee;
 }
 .Discord{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -104,6 +109,8 @@ main{
     background-color: #5764f1;
 }
 .YouTube{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -112,6 +119,8 @@ main{
     background-color: red;
 }
 .Snapchat{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -120,6 +129,8 @@ main{
     background-color: #f5f236;
 }
 .Spotify{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:black;
     margin-left: 15%;
@@ -128,6 +139,8 @@ main{
     background-color: #1ccc5b;
 }
 .Twitch{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:black;
     margin-left: 15%;
@@ -136,6 +149,8 @@ main{
     background-color: #8a43f2;
 }
 .Reddit{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -144,6 +159,8 @@ main{
     background-color: #ff4300;
 }
 .GitHub{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     margin-left: 15%;
     margin-right: 5%;
@@ -152,6 +169,8 @@ main{
     background-color: #000000;
 }
 .Pinterest{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -160,6 +179,8 @@ main{
     background-color: #e61b27;
 }
 .OnlyFans{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -168,6 +189,8 @@ main{
     background-color: #00a0f0;
 }
 .Linkedin{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -176,6 +199,8 @@ main{
     background-color: #0077b7;
 }
 .PayPal{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -184,6 +209,8 @@ main{
     background-image: linear-gradient(to right, #0d3883, #009cda);
 }
 .Facebook{
+    text-decoration: none;
+    padding: 10px;
     border-radius: 25px;
     color:white;
     margin-left: 15%;
@@ -197,6 +224,7 @@ main{
     .container{
         grid-template-columns: 1fr;
         height: 300vh;
+        grid-row-gap: 2rem;
         grid-template-rows:0.3fr 1.5fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr;
         grid-template-areas:
     "main"
