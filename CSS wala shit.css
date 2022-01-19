@@ -11,7 +11,7 @@ html {
     display: grid;
     height: 300vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.5fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr 2.3fr;
+    grid-template-rows: 0.1fr 0.5fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr 1.3fr;
     grid-template-areas: 
     "main main"
     "Bio Bio"
@@ -22,7 +22,7 @@ html {
     "GitHub Pinterest"
     "OnlyFans Linkedin"
     "PayPal Facebook";
-    grid-row-gap: 3.5rem;
+    grid-row-gap: 1.5rem;
 
 }
 .PFP{
@@ -93,8 +93,8 @@ main{
     border-radius: 25px;
     color:white;
     justify-items: start;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
     grid-area: Twitter;
     background-color: #55adee;
 }
@@ -127,8 +127,8 @@ main{
     padding: 10px;
     border-radius: 25px;
     color:white;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
     grid-area: YouTube;
     background-color: red;
 }
@@ -161,8 +161,8 @@ main{
     padding: 10px;
     border-radius: 25px;
     color:black;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
     grid-area: Spotify;
     background-color: #1ccc5b;
 }
@@ -195,8 +195,8 @@ main{
     padding: 10px;
     border-radius: 25px;
     color:white;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
     grid-area: Reddit;
     background-color: #ff4300;
 }
@@ -229,8 +229,8 @@ main{
     padding: 10px;
     border-radius: 25px;
     color:white;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
     grid-area: Pinterest;
     background-color: #e61b27;
 }
@@ -263,8 +263,8 @@ main{
     padding: 10px;
     border-radius: 25px;
     color:white;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
     grid-area: Linkedin;
     background-color: #0077b7;
 }
@@ -297,8 +297,8 @@ main{
     padding: 10px;
     border-radius: 25px;
     color:white;
-    margin-left: 15%;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
     grid-area: Facebook;
     background-color: #1877f2;
 }
